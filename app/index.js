@@ -1,11 +1,29 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+var InputComponent = require('./components/InputComponent.js');
+var OutputComponent = require('./components/OutputComponent.js');
+var marked = require('marked');
 
 var InitialComponent = React.createClass({
+
+    getInitialState: function(){
+        return{
+            outputText : ""
+        }
+    },
+
+    handleUpdateText: function(event){
+        var processed = marked(event.target.value);
+        this.setState({
+            outputText : processed
+        })
+    },
+
     render: function(){
         return(
             <div>
-                Hello World from the chaos!
+                <InputComponent onUpdateText={this.handleUpdateText}/>
+                <OutputComponent textInput={this.state.outputText} />
             </div>
         )
     }
