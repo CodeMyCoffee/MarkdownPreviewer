@@ -1,0 +1,24 @@
+{
+  "name": "markdown_previewer",
+  "version": "1.0.0",
+  "description": "markdown previewer with react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeMyCoffee/MarkdownPreviewer.git"
+  },
+  "author": "Francisco Gutierrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeMyCoffee/MarkdownPreviewer/issues"
+  },
+  "homepage": "https://github.com/CodeMyCoffee/MarkdownPreviewer#readme",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "webpack": "^2.3.2"
+  }
+}
