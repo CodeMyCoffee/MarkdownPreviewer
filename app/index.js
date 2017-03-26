@@ -21,8 +21,9 @@ var InitialComponent = React.createClass({
 
     render: function(){
         return(
-            <div>
-                <InputComponent onUpdateText={this.handleUpdateText}/>
+            <div className="row" >
+                <h1>Markdown Previewer</h1>
+                <InputComponent  onUpdateText={this.handleUpdateText}/>
                 <OutputComponent textInput={this.state.outputText} />
             </div>
         )

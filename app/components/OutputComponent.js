@@ -2,7 +2,7 @@ var React = require('react');
 
 function OutputComponent(props) {
     return(
-        <div dangerouslySetInnerHTML={{ __html: props.textInput }}>
+        <div className="col-md-6 col-sm-6" dangerouslySetInnerHTML={{ __html: props.textInput }}>
         </div>
     )
 }
